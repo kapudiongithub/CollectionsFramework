@@ -20,7 +20,7 @@ public class ArrayListDemo {
         cars.add("Benz");
         cars.add("Toyota");
 
-        System.out.println("\nArray size is: " + cars.size());
+        System.out.println("\nList size is: " + cars.size());
         System.out.println("Car at index 1 is: " + cars.get(2));
 
         System.out.println("\nAll cars added:");
