@@ -1,6 +1,5 @@
-package arraylist;
+package collections;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
