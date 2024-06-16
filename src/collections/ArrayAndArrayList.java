@@ -18,7 +18,7 @@ public class ArrayAndArrayList {
         }
 
         // Read from Array into an ArrayList: Using simple FOR Loop
-        ArrayLists<String> namesList1 = new ArrayLists<>();
+        ArrayList<String> namesList1 = new ArrayList<>();
         for (int i = 0; i < namesArray.length; i++) {
             namesList1.add(namesArray[i]);
         }
@@ -33,7 +33,7 @@ public class ArrayAndArrayList {
         namesArray[1] = "Jomo";
 
         // Read from Array into an ArrayList: Using Advanced FOR Loop
-        ArrayLists<String> namesList2 = new ArrayLists<>();
+        ArrayList<String> namesList2 = new ArrayList<>();
         for (String element : namesArray) {
             namesList2.add(element);
         }
@@ -46,7 +46,7 @@ public class ArrayAndArrayList {
         namesArray[3] = "Kholo";
 
         // Read from Array into an ArrayList: Using Collection.addAll
-        ArrayLists<String> namesList3 = new ArrayLists<>();
+        ArrayList<String> namesList3 = new ArrayList<>();
         Collections.addAll(namesList3, namesArray);
 
         // Print contents of namesList3
@@ -57,7 +57,7 @@ public class ArrayAndArrayList {
         namesArray[3] = "Lesh";
 
         // Read from Array into an ArrayList: Initialize ArrayList with Arrays.asList
-        ArrayLists<String> arrayList4 = new ArrayLists<>(Arrays.asList(namesArray));
+        ArrayList<String> arrayList4 = new ArrayList<>(Arrays.asList(namesArray));
 
         // Print contents of namesList4 using Iterator
         System.out.println("\nIterate thru namesList4:");
