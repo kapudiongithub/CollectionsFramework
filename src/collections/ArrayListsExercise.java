@@ -28,24 +28,19 @@ public class ArrayListsExercise {
         }
 
         /* SEARCH FOR A SPECIFIC ELEMENT IN AN ARRAYLIST AND ASSIGN IT TO A VARIABLE
-         * Approach2: Using the contains method and get the index
+         * Approach2: Use the contains method and get the index
          */
 
         //Check if the list contains the specific element
         if (fruitList.contains("Guava")) {
             // Find the index of the element and retrieve it
             int index = fruitList.indexOf("Guava");
+            // Get element by index and Assign it to a variable
             String elementFound = fruitList.get(index);
+
             System.out.println("The fruit " + "'" + elementFound + "'" + " was found at index " + index);
-        }else {
+        } else {
             System.out.println("Fruit was not found in the fruitList");
         }
-    }
-
-
-    public static String searchList(String ele) {
-        String foundElement = ele;
-
-        return foundElement;
     }
 }
