@@ -1,7 +1,7 @@
-package arraylist;
+package collections;
 
-import java.sql.Array;
 import java.util.*;
+import java.util.Arrays;
 
 public class ArrayAndArrayList {
 
@@ -18,7 +18,7 @@ public class ArrayAndArrayList {
         }
 
         // Read from Array into an ArrayList: Using simple FOR Loop
-        ArrayList<String> namesList1 = new ArrayList<>();
+        ArrayLists<String> namesList1 = new ArrayLists<>();
         for (int i = 0; i < namesArray.length; i++) {
             namesList1.add(namesArray[i]);
         }
@@ -33,7 +33,7 @@ public class ArrayAndArrayList {
         namesArray[1] = "Jomo";
 
         // Read from Array into an ArrayList: Using Advanced FOR Loop
-        ArrayList<String> namesList2 = new ArrayList<>();
+        ArrayLists<String> namesList2 = new ArrayLists<>();
         for (String element : namesArray) {
             namesList2.add(element);
         }
@@ -46,7 +46,7 @@ public class ArrayAndArrayList {
         namesArray[3] = "Kholo";
 
         // Read from Array into an ArrayList: Using Collection.addAll
-        ArrayList<String> namesList3 = new ArrayList<>();
+        ArrayLists<String> namesList3 = new ArrayLists<>();
         Collections.addAll(namesList3, namesArray);
 
         // Print contents of namesList3
@@ -57,20 +57,19 @@ public class ArrayAndArrayList {
         namesArray[3] = "Lesh";
 
         // Read from Array into an ArrayList: Initialize ArrayList with Arrays.asList
-        ArrayList<String> arrayList4 = new ArrayList<>(Arrays.asList(namesArray));
+        ArrayLists<String> arrayList4 = new ArrayLists<>(Arrays.asList(namesArray));
 
         // Print contents of namesList4 using Iterator
         System.out.println("\nIterate thru namesList4:");
         Iterator<String> iterate = arrayList4.iterator();
         while (iterate.hasNext()) {
             String names = iterate.next();
-            System.out.println(names);
+            System.out.println("Element of arrayList4: " + names);
         }
 
-        /*
-         READING FROM ARRAYLIST INTO AN ARRAY
-          Convert the ArrayList to an Array
-          Method1: Using toArray() with no arguments (returns Object[])
+        /* READING FROM ARRAYLIST INTO AN ARRAY
+         * Convert the ArrayList to an Array
+         * Method1: Using toArray() with no arguments (returns Object[])
          */
         Object[] objectArray = namesList1.toArray();
 
@@ -80,10 +79,9 @@ public class ArrayAndArrayList {
             System.out.println(obj);
         }
 
-        /*
-         READING FROM ARRAYLIST INTO AN ARRAY
-          Convert the ArrayList to an Array
-          Method2: Using toArray(T[] a) with a typed array (returns T[])
+        /* READING FROM ARRAYLIST INTO AN ARRAY
+         * Convert the ArrayList to an Array
+         * Method2: Using toArray(T[] a) with a typed array (returns T[])
          */
         String[] stringArray = new String[arrayList4.size()];
         stringArray = arrayList4.toArray(stringArray);
