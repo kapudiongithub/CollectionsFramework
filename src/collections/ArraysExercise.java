@@ -1,6 +1,6 @@
 package collections;
 
-public class Arrays {
+public class ArraysExercise {
 
     public static void main(String[] args) {
         String[] namesArray = {"Bobo", "Gomo", "Kamo", "Lebo", "Nolo"};
