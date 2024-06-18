@@ -4,9 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrayListsExercise {
+
+    static ArrayList<String> fruitList = new ArrayList<>(Arrays.asList("Orange", "Banana", "Grape", "Guava"));
+
     public static void main(String[] args) {
 
-        ArrayList<String> fruitList = new ArrayList<>(Arrays.asList("Orange", "Banana", "Grape", "Guava"));
+        String targetFruit = "Guava";
+        useContainsMethod(targetFruit);
 
         /* SEARCH FOR A SPECIFIC ELEMENT IN AN ARRAYLIST AND ASSIGN IT TO A VARIABLE
          * Approach1: Using a Loop
@@ -27,14 +31,17 @@ public class ArrayListsExercise {
             System.out.println("Fruit was not found in the fruitList");
         }
 
-        /* SEARCH FOR A SPECIFIC ELEMENT IN AN ARRAYLIST AND ASSIGN IT TO A VARIABLE
-         * Approach2: Use the contains method and get the index
-         */
+    }
+
+    /* SEARCH FOR A SPECIFIC ELEMENT IN AN ARRAYLIST AND ASSIGN IT TO A VARIABLE
+     * Approach2: Use the contains method and get the index
+     */
+    public static void useContainsMethod(String fruit) {
 
         //Check if the list contains the specific element
-        if (fruitList.contains("Guava")) {
+        if (fruitList.contains(fruit)) {
             // Find the index of the element and retrieve it
-            int index = fruitList.indexOf("Guava");
+            int index = fruitList.indexOf(fruit);
             // Get element by index and Assign it to a variable
             String elementFound = fruitList.get(index);
 
