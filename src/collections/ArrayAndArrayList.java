@@ -38,7 +38,7 @@ public class ArrayAndArrayList {
             namesList2.add(element);
         }
 
-        // Print contents of namesList2
+        // Print namesList2
         System.out.println("\nElements of namesList2:");
         System.out.println("namesList: " + namesList2);
 
@@ -49,7 +49,7 @@ public class ArrayAndArrayList {
         ArrayList<String> namesList3 = new ArrayList<>();
         Collections.addAll(namesList3, namesArray);
 
-        // Print contents of namesList3
+        // Print namesList3
         System.out.println("\nElements of namesList3:");
         System.out.println("namesList: " + namesList3);
 

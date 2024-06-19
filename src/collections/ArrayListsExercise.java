@@ -30,11 +30,10 @@ public class ArrayListsExercise {
         } else {
             System.out.println("Fruit was not found in the fruitList");
         }
-
     }
 
     /* SEARCH FOR A SPECIFIC ELEMENT IN AN ARRAYLIST AND ASSIGN IT TO A VARIABLE
-     * Approach2: Use the contains method and get the index
+     * Approach2: Use the contains method and get the element by its index
      */
     public static void useContainsMethod(String fruit) {
 
